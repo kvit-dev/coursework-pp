@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controller.DepositCardController"
+            prefWidth="280" prefHeight="260" styleClass="deposit-card">
+
+    <VBox spacing="15" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10" AnchorPane.bottomAnchor="10">
+        <Text fx:id="bankName" styleClass="bank-name" text="Банк"/>
+        <Text fx:id="depositName" styleClass="deposit-name" text="Назва депозиту"/>
+
+        <VBox spacing="5">
+            <Text fx:id="interestRate" styleClass="info-text" text="Ставка: 0%"/>
+            <Text fx:id="termMonths" styleClass="info-text" text="Термін: 0 міс."/>
+            <Text fx:id="earlyWithdrawal" styleClass="info-text" text="Достр. зняття: ні"/>
+            <Text fx:id="replenishment" styleClass="info-text" text="Поповнення: ні"/>
+        </VBox>
+
+        <HBox spacing="10" alignment="CENTER_LEFT">
+            <Button text="Редагувати" onAction="#onEdit" styleClass="edit-button"/>
+            <Button text="Видалити" onAction="#onDelete" styleClass="delete-button"/>
+        </HBox>
+    </VBox>
+</AnchorPane>
+

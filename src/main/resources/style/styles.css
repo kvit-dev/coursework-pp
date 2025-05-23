@@ -1,0 +1,116 @@
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: #4e5459;
+}
+
+.side-button {
+    -fx-background-color: #4caf50;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 12px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 3, 0.2, 0, 2);
+    -fx-transition: all 0.3s ease;
+}
+
+.side-button:hover {
+    -fx-background-color: #388e3c;
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.search-field {
+    -fx-background-radius: 20;
+    -fx-padding: 10 15;
+    -fx-background-color: #e0e0e0;
+    -fx-text-fill: #182029;
+    -fx-font-size: 14px;
+}
+
+.search-button {
+    -fx-background-color: #4caf50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 20;
+    -fx-cursor: hand;
+}
+
+.search-button:hover {
+    -fx-background-color: #388e3c;
+}
+
+.deposit-card {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.2, 0, 4);
+    -fx-pref-width: 280px;
+    -fx-pref-height: 240px;
+    -fx-transition: all 0.3s ease;
+}
+
+.deposit-card:hover {
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.bank-name {
+    -fx-fill: #2e7d32;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.deposit-name {
+    -fx-fill: #37474f;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.info-text {
+    -fx-fill: #555;
+    -fx-font-size: 14px;
+}
+
+.edit-button {
+    -fx-background-color: #42a5f5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 6px 12px;
+    -fx-background-radius: 8px;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+    -fx-transition: all 0.2s ease;
+}
+
+.edit-button:hover {
+    -fx-background-color: #1e88e5;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.delete-button {
+    -fx-background-color: #ef5350;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 6px 12px;
+    -fx-background-radius: 8px;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+    -fx-transition: all 0.2s ease;
+}
+
+.delete-button:hover {
+    -fx-background-color: #d32f2f;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.dialog-root {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20px;
+    -fx-background-radius: 10px;
+}

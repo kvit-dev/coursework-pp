@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="controller.MainController">
+    <left>
+        <VBox spacing="30" alignment="TOP_CENTER" style="-fx-background-color: #1e272e; -fx-padding: 30;">
+            <ImageView fitHeight="60" fitWidth="60" preserveRatio="true">
+                <Image url="@icons/logo.png"/>
+            </ImageView>
+
+            <Text text="Вклади" style="-fx-font-size: 25px;-fx-font-weight: bold; -fx-text-fill: #ffffff"/>
+
+            <VBox spacing="20" alignment="TOP_CENTER">
+                <Button text="Додати депозит" fx:id="addDepositBtn" onAction="#openAddDeposit" maxWidth="Infinity" styleClass="side-button" />
+                <Button text="Сортувати за терміном" fx:id="termSortButton" onAction="#onTermSort" styleClass="side-button" />
+                <Button text="Калькулятор" fx:id="calculatorBtn" onAction="#openCalculator" maxWidth="Infinity" styleClass="side-button" />
+                <Button text="Аналітика" fx:id="analyticsBtn" onAction="#openAnalytics" maxWidth="Infinity" styleClass="side-button" />
+            </VBox>
+        </VBox>
+    </left>
+
+    <top>
+        <HBox alignment="CENTER" spacing="10" style="-fx-padding: 20;" BorderPane.alignment="CENTER">
+            <TextField fx:id="searchField" promptText="Пошук банку..." styleClass="search-field" prefWidth="500" />
+            <Button text="Пошук" onAction="#onSearch" styleClass="search-button" />
+        </HBox>
+    </top>
+
+    <center>
+        <ScrollPane fitToWidth="true" fitToHeight="true" style="-fx-background: #2c3e50;">
+            <FlowPane fx:id="depositCardsContainer"
+                      prefWidth="1200" prefHeight="800"
+                      hgap="20" vgap="40"
+                      prefWrapLength="1200"
+                      styleClass="cards-container">
+                <padding>
+                    <Insets top="40" right="40" bottom="40" left="40"/>
+                </padding>
+            </FlowPane>
+        </ScrollPane>
+    </center>
+</BorderPane>

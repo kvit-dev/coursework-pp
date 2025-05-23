@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.ChangeDepositInfo" styleClass="dialog-root">
+    <Label text="Змінити інформацію про вклад" style="-fx-font-size: 16px;" />
+    <TextField fx:id="interestRateField" promptText="Процентна ставка" />
+    <TextField fx:id="termField" promptText="Термін (міс.)" />
+    <CheckBox fx:id="earlyWithdrawalBox" text="Дострокове зняття" />
+    <CheckBox fx:id="replenishmentBox" text="Можливість поповнення" />
+    <Button text="Оновити" onAction="#onChangeDeposit" />
+</VBox>

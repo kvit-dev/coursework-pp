@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.chart.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.AnalyticsController" spacing="10" alignment="CENTER" styleClass="dialog-root">
+    <Label text="Аналітика депозитів" style="-fx-font-size: 16px;" />
+    <PieChart fx:id="withdrawalPie" prefHeight="300" />
+    <BarChart fx:id="avgRateChart" title="Середні ставки за строками (міс.)" prefHeight="300">
+        <xAxis>
+            <CategoryAxis label="Термін" />
+        </xAxis>
+        <yAxis>
+            <NumberAxis label="Ставка (%)" />
+        </yAxis>
+    </BarChart>
+</VBox>
